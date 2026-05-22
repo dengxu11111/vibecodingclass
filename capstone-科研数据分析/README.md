@@ -5,6 +5,19 @@
 > **数据**：ERA5 reanalysis，经 Open-Meteo Historical Weather API 免费代理（零 key、零 VPN）。
 > **为什么是 30 年**：30 年是 WMO climate normal 的标准参考期；本课程把它定为教学趋势分析的最低口径。5 年样本的 CI 会宽到没法下任何结论。
 
+## 第一次跑？三行命令看到结果
+
+```powershell
+cd capstone-科研数据分析
+python 01_下载.py   # 联网 1-2 分钟（无 key），下完 7 城 × 30 年气温
+python 02_分析.py   # OLS + Student-t + MK + Sen，写出 趋势汇总.csv
+python 03_出图.py   # outputs/ 下出 3 张 PNG
+```
+
+看 `outputs/*.png` 就有"东西"了。**第 04 步起草 + 第 05 步核验**是给"想交一份给导师看的稿子"的人——参考 [04_起草.md](./04_起草.md) 在 Claude Code / OpenClaw 对话里跑三角色。
+
+**网不好 / 工具没装齐**？看 `../example/capstone_5y_cds/`：CDS 路径预跑好的 CSV，21 KB，直接拿来读就能学清楚"数据长啥样"。
+
 ## 故事
 
 设定：你需要在半天内回答"近 30 年中国主要城市的气温到底变了多少"，并交出一两张图、一段综述。

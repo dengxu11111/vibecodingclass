@@ -2,6 +2,18 @@
 
 > 对应 PPT 第 57–67 页
 
+## 学完这章你能
+
+**把自己 vibe 出来的工作流（"抓 → 清 → 画"或"读 csv → 写综述"）封装成一份 SKILL.md**——下次一句话 `Use the X skill` 就能调出来，不用重新教 Agent。
+
+## 5 分钟先看这个
+
+```powershell
+code 06-Skill封装/对比示例_有无Skill.md
+```
+
+同一个数据清洗任务，**开 / 不开**「数据清洗」Skill 各跑一次的 5 项打分对比。看完 30 秒就知道什么时候**值得**封 Skill，什么时候**不值得**。
+
 ## WHAT
 
 - 核心对象：Skill / SKILL.md / Workflow / Validation

@@ -2,6 +2,21 @@
 
 > 对应 PPT 第 46–56 页
 
+## 学完这章你能
+
+**在 OpenClaw 里接好 DeepSeek API，跑一个"读你仓库 + 写一份文件"的 Agent 任务**——不需要科学上网，不需要 OpenAI / Anthropic 账号。
+
+## 5 分钟先跑通这个
+
+```
+1. 装 OpenClaw: https://openclaw.ai/
+2. 申请 DeepSeek API key: https://platform.deepseek.com/api_keys
+3. OpenClaw 配置面板填 key
+4. 跟着 Hermes实战_完整示例.md 跑「任务 1：读 README 写课程导读」
+```
+
+完整对话回放（学员发 prompt → Agent 调 read_file / write_file → 产物）见 [Hermes实战_完整示例.md](./Hermes实战_完整示例.md)。
+
 ## WHAT —— 学什么
 
 - **核心对象**：OpenClaw（国产 Claude Code 兼容客户端）、Hermes（开源 Agent 框架）、API Key、Workflow、Tool Use

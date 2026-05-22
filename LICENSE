@@ -12,9 +12,10 @@ Vibe Coding 课程仓库 · 双 License
 学员、讲师、独立研究者可以自由使用、修改、再分发本仓库内容，
 **但请保留出处**（仓库链接或原作者名字）。
 
-第三方组件按各自原 License 处理。复用本仓库 `.claude/skills/` 下的
-Skill 时，请同时参阅 `.claude/skills/CREDITS.md` 和 `06-Skill封装/.claude/skills/CREDITS.md`
-里列出的上游来源。
+第三方组件按各自原 License 处理。完整的第三方归属与许可证全文见
+[THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md)。复用本仓库 `.claude/skills/`
+下的 Skill 时，请同时参阅 `.claude/skills/CREDITS.md` 和
+`06-Skill封装/.claude/skills/CREDITS.md` 里列出的上游来源。
 
 ================================================================
 代码部分 · MIT License
@@ -64,12 +65,19 @@ Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
 ================================================================
 
 ERA5 气候数据来自 Copernicus Climate Change Service Climate Data Store。
-使用时请按 Copernicus License v1.2 引用：
+许可证：Licence to use Copernicus Products v1.2 — 全文见
+[licenses/COPERNICUS-LICENSE-v1.2.txt](./licenses/COPERNICUS-LICENSE-v1.2.txt)。
+
+使用时**必须**引用：
 
   Hersbach, H., Bell, B., Berrisford, P., et al. (2023): ERA5 monthly
   averaged data on single levels from 1940 to present. Copernicus Climate
   Change Service (C3S) Climate Data Store (CDS).
-  DOI: 10.24381/cds.f17050d7
+  DOI: https://doi.org/10.24381/cds.f17050d7
 
-Open-Meteo Historical Weather API 是 ERA5 的免费代理服务，归属其官方网站：
+Open-Meteo Historical Weather API 是 ERA5 的免费代理服务，按 CC BY 4.0 归属
+其官方网站：
   https://open-meteo.com/en/docs/historical-weather-api
+
+详细第三方归属（含 K-Dense Skills、Open-Meteo、CLI-Anything）见
+[THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md)。

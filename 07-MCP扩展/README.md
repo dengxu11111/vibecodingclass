@@ -2,6 +2,20 @@
 
 > 对应 PPT 第 68–77 页
 
+## 学完这章你能
+
+**给 Agent 装一套"科研工具盒"**——让它**调函数取数**而不是**自己 read_file 边读边猜**。capstone 第 5 步的"数字回链 csv"就是用 MCP 工具做的。
+
+## 5 分钟先跑通这个
+
+```powershell
+pip install mcp
+npx @modelcontextprotocol/inspector python 07-MCP扩展/最小MCP-server.py
+# 浏览器会自动开 http://localhost:5173，左边面板点 load_annual，输入 "北京"
+```
+
+看 4 个 tool 真实返回的 JSON 是什么样：[客户端测试_完整示例.md](./客户端测试_完整示例.md)。
+
 ## WHAT
 
 - 核心对象：MCP Server / Tool / Resource / Connector
@@ -26,7 +40,8 @@ Agent 没有稳定工具时，"知道怎么做"和"真的做到了"会混在一�
   - `compute_ols_trend(years, values)` → OLS + Student-t CI
   - `load_trend_summary()` → 读 `趋势汇总.csv`
   - `verify_number(value, ...)` → 数字回 grep csv（防 AI 编数据）
-- [mcp配置样例.json](./mcp配置样例.json)：客户端配置示例
+- [mcp配置样例.json](./mcp配置样例.json)：可直接合并的最小配置（合法 MCP，无说明字段）
+- [mcp配置说明.md](./mcp配置说明.md)：上面 JSON 每个字段的解释 + 全局 vs 项目内的取舍 + jq 合并命令
 - [验收清单.md](./验收清单.md)
 
 ## 跑

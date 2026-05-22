@@ -2,6 +2,18 @@
 
 > 对应 PPT 第 39–45 页
 
+## 学完这章你能
+
+**拿到一个新任务，30 秒做出"用 Claude Code / Cursor / OpenClaw 哪个"的判断**——而不是默认开自己最熟悉的那个。
+
+## 5 分钟先读这个
+
+```powershell
+code 04-Agent工具对比/选型决策_完整示例.md
+```
+
+里面有 5 问决策树 + 3 个真实场景（写论文 / debug 旧仓库 / 临床数据离网）的完整对照。把"短版决策"那 3 行抄到便签上，比读 30 行对比矩阵实用。
+
 ## WHAT —— 学什么
 
 - **核心对象**：VS Code（IDE）、Codex（OpenAI 的代码任务代理）、Claude Code（命令行 Agent）、OpenClaw（国产前端）

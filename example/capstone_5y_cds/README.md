@@ -89,10 +89,14 @@ CDS API 的请求**排队 + 处理时间**不可控（3-30 分钟），5 年 × 
 
 ## 数据使用声明 / 引用
 
-CDS 拉到的 ERA5 数据，按 Copernicus License v1.2 引用：
+CDS 拉到的 ERA5 数据按 **Licence to use Copernicus Products v1.2** 分发；许可证全文随仓库提供，见
+[licenses/COPERNICUS-LICENSE-v1.2.txt](../../licenses/COPERNICUS-LICENSE-v1.2.txt)，
+完整第三方归属见 [THIRD_PARTY_NOTICES.md](../../THIRD_PARTY_NOTICES.md)。
+
+写综述 / 论文 / 任何对外发布时**必须**带上这条引用：
 
 > Hersbach, H., Bell, B., Berrisford, P., et al. (2023): ERA5 monthly averaged data on single levels
 > from 1940 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS).
-> DOI: 10.24381/cds.f17050d7
+> DOI: <https://doi.org/10.24381/cds.f17050d7>
 
-写综述 / 论文时**必须**引用这一条。Open-Meteo 路径属于"间接使用"，要写明"通过 Open-Meteo 历史天气 API 访问的 ERA5"。
+Open-Meteo 路径（capstone 主线）属于"通过 Open-Meteo 代理访问的 ERA5"——除了上面这条 Hersbach 引用外，还要在致谢部分写一句 `Weather data by Open-Meteo`。

@@ -1,0 +1,47 @@
+Licence to use Copernicus Products  ·  v1.2
+============================================
+
+This file is a POINTER, not the canonical text.
+
+The Copernicus Products are licensed under the *Licence to use Copernicus
+Products*, version 1.2 (or the version applicable when each individual product
+is downloaded; CDS shows the current version on every dataset page).
+
+The authoritative, legally-binding text MUST be obtained from the
+European Centre for Medium-Range Weather Forecasts (ECMWF):
+
+  Canonical URL (PDF):
+    https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf
+
+  Dataset terms page (per dataset):
+    https://cds.climate.copernicus.eu/cdsapp#!/dataset/<dataset-name>?tab=overview
+
+Summary of the key user obligations (NON-AUTHORITATIVE — for orientation only;
+the text above is the authority):
+
+  - Permitted: free use (commercial included), redistribution, modification,
+    creation of derivative products.
+  - Required: attribute the data producer (ECMWF) and the Copernicus
+    Climate Change Service (C3S); cite the dataset DOI when publishing.
+  - Required: pass these obligations on to recipients of any redistribution.
+  - Forbidden: removing or hiding attribution; implying ECMWF / C3S endorsement
+    of derived products.
+  - Disclaimer: data are provided "as is"; users assume all risk.
+
+Required citation for ERA5 monthly averaged data used in this repository:
+
+  Hersbach, H., Bell, B., Berrisford, P., et al. (2023):
+  ERA5 monthly averaged data on single levels from 1940 to present.
+  Copernicus Climate Change Service (C3S) Climate Data Store (CDS).
+  DOI: https://doi.org/10.24381/cds.f17050d7
+
+If you redistribute / modify the CSV samples in
+`example/capstone_5y_cds/data/`, you must:
+
+  1. Keep the citation above visible in your derived work.
+  2. Make this file (or an equivalent pointer to the canonical licence)
+     available alongside the data.
+  3. Not imply that ECMWF or the Copernicus programme endorses your work.
+
+For questions about the Copernicus licence, contact ECMWF directly
+(copernicus-support@ecmwf.int).

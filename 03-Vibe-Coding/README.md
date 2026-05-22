@@ -2,6 +2,20 @@
 
 > 对应 PPT 第 29–38 页
 
+## 学完这章你能
+
+**用一句中文需求把"抓数据 → 出图"这种小任务从 30 分钟手写压到 5 分钟**——而且每一步你都记笔记，下次同类需求复用模板秒过。
+
+## 5 分钟先跑通这个
+
+```powershell
+# 在 Claude Code / OpenClaw 对话里贴一句话需求，把生成的脚本另存为 demo.py 跑：
+# "写一个 Python 脚本，用 urllib 抓 arXiv 最新 50 篇 'large language model' 论文，
+#  按月份统计发表数，画 PNG 到本目录。只用标准库，不要 requests。"
+```
+
+跑通后看 [调试记录_完整示例.md](./调试记录_完整示例.md)——一份"capstone 第 1 步从崩到稳"的真实 4 轮 prompt 迭代记录，照着写自己的就有谱。
+
 ## WHAT —— 学什么
 
 - **核心对象**：Vibe Coding（自然语言驱动编程）、Debug、Notebook、Script、Skill

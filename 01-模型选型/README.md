@@ -2,6 +2,19 @@
 
 > 对应 PPT 第 1–16 页
 
+## 学完这章你能
+
+**给一段任意中文 / 英文文本，估算它在 DeepSeek / Claude / GPT 上调一次要花多少钱。** 然后能判断"这个任务该选哪个模型"——而不是默认 Claude 或默认 DeepSeek。
+
+## 5 分钟先跑通这个
+
+```powershell
+cd 01-模型选型
+python token估算.py --file 示例文本/中文摘要.txt
+```
+
+输出会告诉你 498 字符的中文摘要 ≈ 505 token，在 9 家主流模型上的预估单价。看完之后再回来看下面的 WHAT / WHY / HOW。
+
 ## WHAT —— 学什么
 
 - **核心对象**：Token、Context、API、Reasoning、国产模型

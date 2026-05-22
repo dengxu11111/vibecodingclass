@@ -9,6 +9,21 @@
 
 > capstone 用气候数据做演示，**4 步流水线（下载 → 分析 → 出图 → 多模型撰稿）可原样套到任何领域**——换数据源即可。`pipeline_template/` 就是为这件事准备的。
 
+## 刚 clone 完？三步上手
+
+```powershell
+# 1. 装 Python 依赖（5 分钟）
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+
+# 2. 看 example 里"已经跑完是什么样"（0 网络要求）
+code example/capstone_5y_cds/data/raw/era5_cds_monthly.csv
+
+# 3. 跑 capstone 第 1 步（联网，约 1-2 分钟）
+python capstone-科研数据分析/01_下载.py
+```
+
+跑通第 3 步后再按下面的章节表展开学。**不想装太多东西**？只装 Python 3.10+ 就能跑 capstone + 第 01 / 08 章。
+
 ## 课程目录
 
 | 章节 | 主题 | PPT 页 | 关键词 |
@@ -62,7 +77,7 @@ git clone 之后 Claude Code 自动认出根 `.claude/`：
 ```powershell
 # 把 example 的 CDS 数据拷到 capstone 工作目录
 xcopy /E /I example\capstone_5y_cds\data capstone-科研数据分析\data
-python capstone-科研数据分析_分析_cds.py
+python capstone-科研数据分析\02_分析_cds.py
 ```
 
 完整离网方案见 [example/EXAMPLE-README.md](./example/EXAMPLE-README.md)。

@@ -2,6 +2,20 @@
 
 > 对应 PPT 第 17–28 页
 
+## 学完这章你能
+
+**在自己笔记本上跑起来一个不联网的中文 AI**——做涉密数据分析、内网知识库问答都不用担心数据外泄。
+
+## 5 分钟先跑通这个
+
+```powershell
+# 装 Ollama: https://ollama.com/download （体积 ~700 MB）
+ollama pull qwen3.5:4b
+python 02-本地部署/测试本地模型.py
+```
+
+跑通之后再看 [示例任务/本地模型试金石.md](./示例任务/本地模型试金石.md)——3 个 5 分钟测试告诉你这个本地模型能干哪些活、不能干哪些活。
+
 ## WHAT —— 学什么
 
 - **核心对象**：Ollama、Open WebUI、Docker、Agent

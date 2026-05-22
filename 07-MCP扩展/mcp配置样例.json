@@ -1,34 +1,13 @@
 {
-  "_README": "把 mcpServers 里的条目合并进你的 ~/.claude.json 或项目根的 .mcp.json。绝对路径改成你机器上的；或者用相对路径配合 cwd / env 让它跟仓库走。",
-
   "mcpServers": {
     "vibecoding-capstone": {
-      "_说明": "本仓库自带的科研 MCP server，包装 capstone 的分析能力：load_annual / compute_ols_trend / load_trend_summary / verify_number。",
-      "_数据回链": "verify_number 是关键——起草员说的每个数字都能在这里 grep 回 csv。",
       "command": "python",
       "args": [
         "./07-MCP扩展/最小MCP-server.py"
       ],
-      "_环境变量": "如果 cwd 不是仓库根，设 VIBECODING_REPO_ROOT 指向仓库绝对路径；否则 server 会从脚本位置往上自动找 capstone- 目录。",
       "env": {
         "VIBECODING_REPO_ROOT": "${workspaceFolder}"
       }
-    },
-
-    "filesystem": {
-      "_说明": "官方文件系统 MCP server。给定一个根目录，Agent 能在里面读写。",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-filesystem",
-        "${workspaceFolder}"
-      ]
-    },
-
-    "fetch": {
-      "_说明": "官方网络抓取 MCP server，让 Agent 能 GET 公开 URL（capstone 第 01 步备用）。",
-      "command": "uvx",
-      "args": ["mcp-server-fetch"]
     }
   }
 }
