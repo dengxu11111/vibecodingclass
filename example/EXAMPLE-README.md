@@ -31,9 +31,9 @@ code --diff capstone-科研数据分析\data\processed\era5_cds_annual.csv examp
 
 ## Open-Meteo 30 年没有 example，故意的
 
-Open-Meteo 路径**无 key、无 VPN、无账号**就能跑，课堂主线设定：**每位学员自己跑一次**比看现成答案学得扎实。
+Open-Meteo 路径**无 key、无 VPN、无账号**就能跑，**每位你自己跑一次**比看现成答案学得扎实。
 
-讲师想准备 Open-Meteo 现成产物（应对无网）→ 自己跑 `python 01_下载.py && python 02_分析.py && python 03_出图.py`，把产出复制到 `example/capstone_30y/`，写对应 README。本仓库**故意不预装**。
+想准备 Open-Meteo 现成产物（应对无网）→ 自己跑 `python 01_下载.py && python 02_分析.py && python 03_出图.py`，把产出复制到 `example/capstone_30y/`，写对应 README。本仓库**故意不预装**。
 
 ## 这里不能放
 

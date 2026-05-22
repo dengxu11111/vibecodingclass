@@ -49,10 +49,10 @@
 
 | 想要 | 文件 | 优点 | 缺点 |
 | --- | --- | --- | --- |
-| **只在本仓库用** | `<repo-root>/.mcp.json` | 学员 clone 后立即可用；不污染个人配置 | 在其它项目里 Claude Code 不知道 vibecoding-capstone |
+| **只在本仓库用** | `<repo-root>/.mcp.json` | 你 clone 后立即可用；不污染个人配置 | 在其它项目里 Claude Code 不知道 vibecoding-capstone |
 | **全局任何项目都用** | `~/.claude.json` 的 `mcpServers` | 一处配好处处用 | 必须用绝对路径，跨机器 / clone 后失效 |
 
-**课堂建议**：先用项目内 `.mcp.json` 跑通。下课后想长期用，再迁到全局并把路径写死。
+**建议**：先用项目内 `.mcp.json` 跑通；想长期用再迁到全局并把路径写死。
 
 ## 合并方法
 
@@ -80,4 +80,4 @@ python 07-MCP扩展/最小MCP-server.py
 npx @modelcontextprotocol/inspector python 07-MCP扩展/最小MCP-server.py
 ```
 
-跑不通就翻 [客户端测试_完整示例.md](./客户端测试_完整示例.md) 的"学员第一次跑常见疑问"表。
+跑不通就翻 [客户端测试_完整示例.md](./客户端测试_完整示例.md) 的"常见疑问"表。

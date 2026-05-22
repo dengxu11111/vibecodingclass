@@ -16,7 +16,7 @@ import argparse
 import sys
 from pathlib import Path
 
-# 价格表 —— **教学估算，以官网为准**（API 价格随时变，上课前讲师过一遍 模型对比表.md 的链接）
+# 价格表 —— **教学估算，以官网为准**（API 价格随时变，用之前过一遍 模型对比表.md 里的官方链接）
 # DeepSeek / Qwen / Gemini 等供应商有分段计费 / 缓存命中折扣，这里取的是最常见档位
 PRICING = {
     "DeepSeek-V3":      {"input": 0.27, "output": 1.10, "context": 64_000,  "中文": "强"},

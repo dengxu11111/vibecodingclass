@@ -8,7 +8,7 @@ description: 三角色流程起草 capstone 综述（资料员 → 起草员 →
 
 ## 前置检查
 
-- `capstone-科研数据分析/data/processed/趋势汇总.csv` 必须存在（如无，告诉学员先跑 `/capstone-run`）
+- `capstone-科研数据分析/data/processed/趋势汇总.csv` 必须存在（如无，告诉用户先跑 `/capstone-run`）
 - `capstone-科研数据分析/outputs/` 下三张 PNG 必须存在
 
 ## 角色 1：资料员
@@ -66,15 +66,15 @@ description: 三角色流程起草 capstone 综述（资料员 → 起草员 →
 - 上半部分：审稿摘要（挑错 + 打分表）
 - 下半部分：重写后的 v2 正文
 
-## 角色 4：研究者（学员）
+## 角色 4：研究者（用户）
 
-提示学员下一步：
+提示用户下一步：
 - 跑 `/capstone-validate` 把 v2 里每个数字回链 csv
 - 通过后把 `草稿_v2.md` 改成 `最终稿.md`，补一段「AI 使用声明」
 
 ## 用哪个模型
 
-讲师按学员条件提示，**不要自动切换**：
+按你的条件选：
 - 有 Claude Pro / API：起草员 + 审稿员都用 Sonnet 4.6
-- 只有 OpenClaw + DeepSeek：3 个角色都用 DeepSeek-V3，审稿员可以用 DeepSeek-R1 加强批判
-- 完全离网：跳过本命令，看 `example/capstone_5y_cds/` 里的 CDS 参考 CSV（Open-Meteo 30 年路径**没有**预装 example，要靠学员自己跑出来）
+- 备用（无 Claude Code）：OpenClaw + DeepSeek-V3 三个角色都用，审稿员可换 DeepSeek-R1 加强批判
+- 完全离网：跳过本命令，看 `example/capstone_5y_cds/` 里的 CDS 参考 CSV（Open-Meteo 30 年路径**没有**预装 example，要靠用户自己跑出来）

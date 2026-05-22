@@ -1,5 +1,5 @@
 {
-  "_README": "Vibe Coding 课程仓库默认权限。学生 git clone 之后 Claude Code 会自动读这个文件。原则：读全仓库，写只限学生产物目录，shell 只放行教学脚本，破坏性命令一律拒绝或询问。如果你是讲师想给自己开大权限，复制本文件到 .claude/settings.local.json（已 gitignore）。",
+  "_README": "Vibe Coding 课程仓库默认权限。git clone 之后 Claude Code 会自动读这个文件。原则：读全仓库，写只限用户产物目录，shell 只放行教学脚本，破坏性命令一律拒绝或询问。想覆盖默认权限，复制本文件到 .claude/settings.local.json（已 gitignore）。",
   "permissions": {
     "allow": [
       "Read(*)",

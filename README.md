@@ -1,92 +1,63 @@
-# Vibe Coding 课程配套仓库
+# Vibe Coding 课程仓库
 
-> 配套 96 页《Vibe Coding 课件 PPT》。课件讲 WHAT / WHY，本仓库给"打开终端就能跑"的 HOW。
+配套 96 页《Vibe Coding》课件 PPT 的实操材料。课件讲 WHAT / WHY，本仓库讲 HOW——打开终端就能跑。
 
-## 谁该看这个仓库
-
-- 想把 Claude Code / Codex / OpenClaw / Ollama / MCP / Skill 用进日常科研的人（本科 → 博后 → 工程师 / 独立研究者，方向不限）
-- 已经看过课件 PPT、需要照着敲的实操清单
-
-> capstone 用气候数据做演示，**4 步流水线（下载 → 分析 → 出图 → 多模型撰稿）可原样套到任何领域**——换数据源即可。`pipeline_template/` 就是为这件事准备的。
-
-## 刚 clone 完？三步上手
-
-```powershell
-# 1. 装 Python 依赖（5 分钟）
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
-
-# 2. 看 example 里"已经跑完是什么样"（0 网络要求）
-code example/capstone_5y_cds/data/raw/era5_cds_monthly.csv
-
-# 3. 跑 capstone 第 1 步（联网，约 1-2 分钟）
-python capstone-科研数据分析/01_下载.py
-```
-
-跑通第 3 步后再按下面的章节表展开学。**不想装太多东西**？只装 Python 3.10+ 就能跑 capstone + 第 01 / 08 章。
+**核心工具 = Claude Code + Codex**。其它都是为这两个服务。
 
 ## 课程目录
 
-| 章节 | 主题 | PPT 页 | 关键词 |
-| --- | --- | --- | --- |
-| [00](./00-课前准备/) | 课前准备 | —— | Node.js / Docker / Ollama / Claude Code |
-| [01](./01-模型选型/) | 模型选型 | 1–16 | Token / Context / API / 国产模型 |
-| [02](./02-本地部署/) | 大模型本地部署 | 17–28 | Ollama / Open WebUI / Docker |
-| [03](./03-Vibe-Coding/) | Vibe Coding | 29–38 | Notebook / Script / Skill / Debug |
-| [04](./04-Agent工具对比/) | Agent 工具对比 | 39–45 | VS Code / Codex / Claude Code |
-| [05](./05-OpenClaw-Hermes/) | OpenClaw / Hermes | 46–56 | API Key / Workflow / Tool Use |
-| [06](./06-Skill封装/) | Skill 封装 | 57–67 | SKILL.md / Prompt / Validation |
-| [07](./07-MCP扩展/) | MCP 扩展 | 68–77 | Server / Tool / Resource |
-| [08](./08-数据工作流/) | 数据工作流 | 78–85 | Cloud / Dataset / API / Chart |
-| [09](./09-论文自动化/) | 论文自动化 | 86–96 | Multi-model / Reviewer / Evidence Chain |
-| [capstone](./capstone-科研数据分析/) | 综合实操 | —— | 5 步流水线 / OLS+MK+Sen / 数字核验 |
-| [pipeline_template](./pipeline_template/) | 跨学科骨架 | —— | 4 步空模板，套你自己方向 |
-| [资源](./资源/) | 公共资源 | —— | prompt / 参考链接 |
+| 章节 | 主题 | PPT |
+| --- | --- | --- |
+| [00 课前准备](./00-课前准备/) | 装齐 8 件软件 | —— |
+| [01 模型选型](./01-模型选型/) | Token / 上下文 / 价格 / 国产 vs 国外 | 1–16 |
+| [02 本地部署](./02-本地部署/) | Ollama / Open WebUI / 私有 AI | 17–28 |
+| [03 Vibe Coding](./03-Vibe-Coding/) | 自然语言驱动编程 + 调试记录 | 29–38 |
+| [04 Agent 对比](./04-Agent工具对比/) | **Claude Code vs Codex 决策** | 39–45 |
+| [05 OpenClaw](./05-OpenClaw-Hermes/) | 国内备用 Agent（DeepSeek API） | 46–56 |
+| [06 Skill 封装](./06-Skill封装/) | 把高频动作沉淀给 Claude Code | 57–67 |
+| [07 MCP 扩展](./07-MCP扩展/) | 给 Agent 装科研工具盒 | 68–77 |
+| [08 数据工作流](./08-数据工作流/) | 从 API 抓数据到出图 | 78–85 |
+| [09 论文自动化](./09-论文自动化/) | 多模型协作 + 数字回链核验 | 86–96 |
+| [capstone](./capstone-科研数据分析/) | 5 步综合（ERA5 气温趋势） | —— |
+| [pipeline_template](./pipeline_template/) | 跨学科 4 步骨架 | —— |
+| [资源](./资源/) | prompt + 参考链接 | —— |
 
-> PPT 不随仓库发布，页码仅用于课堂对齐；公开读者按各章 README 独立学习即可。
+> PPT 不随仓库发布。
 
-## 快速开始
+## 刚 clone 完？三步
 
 ```powershell
-# 1. 装依赖
-pip install -r requirements.txt
-# 国内：pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
-
-# 2. 跑 capstone（无 key，30 年 ERA5）
-cd capstone-科研数据分析
-python 01_下载.py
-python 02_分析.py
-python 03_出图.py
-# 04 在 Claude Code / OpenClaw 对话里跑，见 04_起草.md（三角色）
-python 05_核验.py
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+code example/capstone_5y_cds/data/raw/era5_cds_monthly.csv
+python capstone-科研数据分析/01_下载.py
 ```
 
-## 课程专用 slash command
+## Slash command
 
-git clone 之后 Claude Code 自动认出根 `.claude/`：
+git clone 后 Claude Code 自动认出根 `.claude/`：
 
 | 命令 | 作用 |
 | --- | --- |
-| `/setup-check` | 检查 Node / Python / Ollama / Claude / Codex；英文报错翻译成中文 |
-| `/explain-error` | 粘报错 → 原因 / 下一步 / 是否可跳过 |
-| `/capstone-run` | 顺序跑 01_下载 → 02_分析 → 03_出图，失败停下 |
+| `/setup-check` | 验环境，英文报错翻译成中文 |
+| `/explain-error` | 粘报错 → 原因 / 下一步 / 可否跳过 |
+| `/capstone-run` | 顺序跑 01-03，失败停下 |
 | `/capstone-draft` | 三角色对话生成综述 |
-| `/capstone-validate` | 跑 05_核验.py，按 untraced 报告给修改建议 |
+| `/capstone-validate` | 跑 05_核验.py，按 untraced 给建议 |
 
-## 没网怎么办
+## 没网
 
 ```powershell
-# 把 example 的 CDS 数据拷到 capstone 工作目录
 xcopy /E /I example\capstone_5y_cds\data capstone-科研数据分析\data
-python capstone-科研数据分析\02_分析_cds.py
+python capstone-科研数据分析_分析_cds.py
 ```
 
-完整离网方案见 [example/EXAMPLE-README.md](./example/EXAMPLE-README.md)。
+详见 [example/EXAMPLE-README.md](./example/EXAMPLE-README.md)。
 
-## 路径 / 编码提示
+## 注意
 
-- 本地仓库路径含中文 / 空格 / 破折号时绝对路径加引号：`cd '<repo-root>'`
-- Python `print` 不要打 `²` / `✓` / `—`（Windows GBK 控制台炸），matplotlib 标签没事
+- 仓库路径含中文 / 空格 / 破折号时绝对路径加引号：`cd '<repo-root>'`
+- Python `print` 不要打 `²` / `✓` / `—`（Windows GBK 炸），matplotlib 标签没事
 
 ## 反馈
 
-讲到哪一章发现 README 不对劲，欢迎改 Markdown 提 PR。
+发现 README 不对劲，欢迎改 Markdown 提 PR。

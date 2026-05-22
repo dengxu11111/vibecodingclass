@@ -47,7 +47,7 @@ Open-Meteo 路径（`capstone-科研数据分析/01_下载.py` 拉到的数据�
 
 ## 3. Open-Meteo Historical Weather API
 
-**范围**：`capstone-科研数据分析/01_下载.py` 调用此 API 抓数据。本仓库**不分发** Open-Meteo 数据本身（学员自己跑）。
+**范围**：`capstone-科研数据分析/01_下载.py` 调用此 API 抓数据。本仓库**不分发** Open-Meteo 数据本身（你自己跑）。
 
 **API**：<https://open-meteo.com/en/docs/historical-weather-api>
 

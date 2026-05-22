@@ -22,7 +22,7 @@
 
 注意：
 - 第一次跑某个数据集要先去 CDS 网站接受 Terms of Service（一次性，浏览器点）
-- 排队时间不可控；课堂演示前请讲师提前跑过一次，把 CSV 放进 example/
+- 排队时间不可控；想要现成 CSV 兜底时，提前跑过一次放进 example/
 """
 
 from __future__ import annotations
@@ -107,7 +107,7 @@ def extract_city_points(nc_path: Path) -> list[dict]:
     rows: list[dict] = []
     for name, lat, lon in CITIES:
         pt = da.sel({lat_dim: lat, lon_dim: lon}, method="nearest")
-        # 取实际像元中心，方便学员看
+        # 取实际像元中心，方便你看
         actual_lat = float(pt[lat_dim].values)
         actual_lon = float(pt[lon_dim].values)
         times = pt[time_dim].values

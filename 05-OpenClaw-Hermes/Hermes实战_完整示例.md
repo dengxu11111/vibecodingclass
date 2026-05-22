@@ -1,6 +1,6 @@
 # Hermes 实战 · 一次任务的完整 trace
 
-> 学员第一次跑前看完这个 trace，知道 Agent 工作流长什么样，自己上手就不慌。
+> 第一次跑前看完这个 trace，知道 Agent 工作流长什么样，自己上手就不慌。
 > 任务来自 [Hermes任务样例.md](./Hermes任务样例.md) 任务 1：「读 README 写课程导读」。
 
 ## 前置
@@ -8,7 +8,7 @@
 - OpenClaw 接好 DeepSeek-V3
 - 工作目录在仓库根 `<repo-root>`
 
-## 学员 prompt
+## 你 prompt
 
 ```
 你是【Hermes 任务执行 Agent】，按 4 步顺序执行：

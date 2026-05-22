@@ -365,7 +365,7 @@ def main():
     print(f"  - {t_path}  （新加 mk_S / mk_Z / mk_p / mk_trend / sen_slope / sen_ci95_low / sen_ci95_high 共 7 列）")
     print("\n方法学说明（写综述时请保留这些 caveat）：")
     print("  - **OLS 列是教学最简版**：假设残差独立同分布，对自相关 / 异常值敏感")
-    print("    课堂综述里只说「升温 / 降温 / CI 含 0」，**不要**写「显著」")
+    print("    综述里只说「升温 / 降温 / CI 含 0」，**不要**写「显著」")
     print("  - **MK + Sen 是气候学常规做法**：非参，不要求残差正态，对异常值稳健")
     print("    真做趋势归因，以 MK + Sen 结论为准")
     print("  - 当 OLS 与 MK 结论不一致时（见上方「一致性扫描」），以 MK 为准")

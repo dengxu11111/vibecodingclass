@@ -1,51 +1,35 @@
 # 第 0 章 · 课前准备
 
-> 在第一节课开课前一周完成。装不上的同学课上直接跟读。
+开始学课程之前装完。**全部都装**——每一章都会用到。
 
-## 最少装啥（最快上手）
+## 必装清单
 
-**只想跑 capstone + 第 01 / 08 章**（最便宜的路径）：
-
-| 装什么 | 用在哪 | 装不上能跳过吗 |
+| # | 软件 | 用在哪 |
 | --- | --- | --- |
-| **Python 3.10+** + pip | capstone 全部脚本、token 估算、数据下载 / 清洗 / 出图 | ❌ 必装 |
-| **DeepSeek API key**（免费额度） | 04 / 05 / 09 章里的"找 Agent 对话"步骤 | ✓ 没有也能读 Markdown 学 |
-| **OpenClaw** | 05 章主角 / 用 DeepSeek API 的客户端 | ✓ 没装的话课程里 Agent 对话先看示例就行 |
-| Ollama | 02 章本地大模型 | ✓ 整章可跳，capstone 不依赖 |
-| Docker | 02 章 Open WebUI / 知识库 | ✓ 整段教学演示，capstone 不依赖 |
-| Claude Code / Codex | 03 / 04 / 06 / 07 章 Agent 实操 | ✓ 装不上可以用 OpenClaw 平替 |
+| 1 | **Python 3.10+** + pip | capstone / 01 / 08 |
+| 2 | **Node.js LTS** | 装 Claude Code / Codex 的基础 |
+| 3 | **Claude Code** | 03 / 04 / 06 / 07 / 09 主力 Agent |
+| 4 | **Codex** | 04 章 Agent 对比 |
+| 5 | **OpenClaw** + DeepSeek API key | 05 章；Claude Code 不可用时的国内备用 |
+| 6 | **Ollama** + `qwen3.5:4b` | 02 章本地大模型 |
+| 7 | **Docker Desktop** | 02 章 Open WebUI |
+| 8 | **VS Code** | 主编辑器 |
 
-**最低需求**：装 Python 3.10+ 就够看 + 跑 70% 内容。其它工具按章节展开再装。
+## 步骤
 
-## 这一章要做什么
-
-把后面 9 章会用到的所有软件都装好：
-
-- **Node.js**（Codex / Claude Code 的安装基础）
-- **Claude Code**（贯穿 03–09 章的主力 Agent）
-- **Codex** / Codex Plus（04 章 Agent 工具对比）
-- **OpenClaw**（05 章主角）
-- **Ollama**（02 章本地大模型）
-- **Docker Desktop**（02 章 Open WebUI）
-- **Python 3.10+** & 第三方包（贯穿 01、08、capstone）
-
-## 怎么做
-
-1. 跟着 [软件安装步骤.md](./软件安装步骤.md) 一步步装。
-2. 装完每一个软件就去对应章节的 `验收清单.md` 跑一下"是否装好"那一条。
-3. 装不上的看 [常见问题.md](./常见问题.md)。
+1. 跟 [软件安装步骤.md](./软件安装步骤.md) 一项一项装。
+2. 每装完一个跑 `--version` 命令验证。
+3. 卡住看 [常见问题.md](./常见问题.md)。
 
 ## 验收
-
-打开 PowerShell，下面这些命令都能跑出版本号：
 
 ```powershell
 node --version          # >= v18
 python --version        # >= 3.10
+claude --version
+codex --version
+ollama --version
 docker --version
-ollama --version        # 可选
-claude --version        # Claude Code
-codex --version         # 可选
 ```
 
-至少 `node` / `python` 必须装好，其他可以课中再补。
+8 个全部跑得出版本号才算过。装不上的项目**今天**就解决。

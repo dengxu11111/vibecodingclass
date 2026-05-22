@@ -190,26 +190,31 @@ def load_trend_summary() -> dict:
 def verify_number(
     value: str,
     file: str = "趋势汇总.csv",
-    tol: float = 0.01,
+    tol: float = 0.001,
     column: str | None = None,
     city: str | None = None,
 ) -> dict:
     """数值容差匹配：把一个数字在 capstone 的 csv 里**按数值**回查，确认它是真数据。
 
     与子串匹配（`grep`）不同——这个工具把数字解析成 float，按 ±tol 容差找匹配。
-    所以 "0.45" 不会假命中 "0.4519" 或 "12.4567"——它们 |差| > 0.01。
+    `tol` 默认 **0.001**——slope 级精度。**只想验整数 / 整百分位**用 `tol=0.5`；
+    **想确认整数小数后第 3 位都对**用 `tol=0.0001`。
+
+    **重要警告**：tol 是数值容差，不是子串。所以 `value="0.45"` 与 csv 里 `0.4519`
+    的差 = 0.0019，**默认 tol=0.001 下**会判定 found=False；**但若你手贱调到 tol=0.01**，
+    它就会假命中——这时记得用 `column=` 钉到具体字段。
 
     用法场景：起草员稿子里写 "北京升温 +0.0258 °C/年"
         → verify_number("0.0258")                            # 全表搜
-        → verify_number("0.0258", column="ols_slope_c_per_year")  # 限定列
+        → verify_number("0.0258", column="ols_slope_c_per_year")  # 限定列（推荐）
         → verify_number("0.0258", city="北京")               # 限定城市
-        → verify_number("0.0258", city="北京", column="ols_slope_c_per_year")  # 同行同列
+        → verify_number("0.0258", city="北京", column="ols_slope_c_per_year")  # 同行同列（最严）
 
     Args:
         value:   要查的数字字符串（如 "0.0258"、"22.472"、"+0.0382"）。
         file:    在 capstone/data/processed/ 下要搜的 csv，默认 趋势汇总.csv。
-        tol:     绝对容差，默认 0.01。slope 一类要 ±0.001 时调小。
-        column:  可选——限定只在该列里找（用 csv 的列名）。
+        tol:     绝对容差，默认 0.001（slope 精度）。整数列用 0.5，p 值用 0.0001。
+        column:  可选——限定只在该列里找（用 csv 的列名）。**slope 验证强烈建议带 column**。
         city:    可选——限定只在该城市的行里找。
 
     Returns:
