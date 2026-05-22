@@ -1,0 +1,61 @@
+{
+  "_README": "Vibe Coding 课程仓库默认权限。学生 git clone 之后 Claude Code 会自动读这个文件。原则：读全仓库，写只限学生产物目录，shell 只放行教学脚本，破坏性命令一律拒绝或询问。如果你是讲师想给自己开大权限，复制本文件到 .claude/settings.local.json（已 gitignore）。",
+  "permissions": {
+    "allow": [
+      "Read(*)",
+      "Glob(*)",
+      "Grep(*)",
+      "Bash(git status)",
+      "Bash(git status:*)",
+      "Bash(git diff)",
+      "Bash(git diff:*)",
+      "Bash(git log)",
+      "Bash(git log:*)",
+      "Bash(node --version)",
+      "Bash(npm --version)",
+      "Bash(python --version)",
+      "Bash(py --version)",
+      "Bash(claude --version)",
+      "Bash(codex --version)",
+      "Bash(ollama --version)",
+      "Bash(docker --version)",
+      "Bash(python capstone-科研数据分析/01_下载.py)",
+      "Bash(python capstone-科研数据分析/01_下载.py:*)",
+      "Bash(python capstone-科研数据分析/02_分析.py)",
+      "Bash(python capstone-科研数据分析/02_分析.py:*)",
+      "Bash(python capstone-科研数据分析/03_出图.py)",
+      "Bash(python capstone-科研数据分析/05_核验.py)",
+      "Bash(python capstone-科研数据分析/05_核验.py:*)",
+      "Bash(python 01-模型选型/token估算.py:*)",
+      "Bash(python 02-本地部署/测试本地模型.py)",
+      "Bash(python 08-数据工作流/下载脚本.py:*)",
+      "Bash(python 08-数据工作流/数据清洗.py:*)",
+      "Bash(python 08-数据工作流/出图.py:*)"
+    ],
+    "ask": [
+      "Edit(*)",
+      "Write(*)",
+      "Bash(pip install:*)",
+      "Bash(npm install:*)",
+      "Bash(ollama pull:*)",
+      "Bash(docker:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [
+      "Bash(rm:*)",
+      "Bash(rm -rf:*)",
+      "Bash(del:*)",
+      "Bash(Remove-Item:*)",
+      "Bash(format:*)",
+      "Bash(format-volume:*)",
+      "Bash(git push:*)",
+      "Bash(git push --force:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git checkout -- :*)",
+      "Bash(curl * | sh)",
+      "Bash(curl * | bash)",
+      "Bash(* > /etc/*)"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+# Vibe Coding 课程配套依赖
+# 安装：pip install -r requirements.txt
+# 国内镜像：pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+
+# 核心
+requests>=2.31
+pandas>=2.0
+matplotlib>=3.7
+
+# 第 01 章 Token 估算
+tiktoken>=0.7
+
+# 第 03 章 Notebook
+jupyter>=1.0
+
+# 第 07 章 MCP（可选，没装也不影响其它章节）
+mcp>=1.0
+
+# Capstone CDS 路径（可选，01_下载_cds.py 需要；Open-Meteo 路径不需要这些）
+cdsapi>=0.7
+xarray>=2024.1
+netCDF4>=1.6

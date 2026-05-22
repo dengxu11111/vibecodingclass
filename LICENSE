@@ -1,0 +1,75 @@
+Vibe Coding 课程仓库 · 双 License
+================================
+
+本仓库采用**双 License**：
+
+- **代码部分**（所有 `.py`、`.json`、`.sh` 文件以及 `.claude/` 下的脚本与配置）：
+  **MIT License**
+- **教学内容**（所有 `.md`、`.ipynb`、`.csv` 数据样例、`example/` 下的产物、
+  `资源/` 下的 prompt 模板与参考链接）：
+  **Creative Commons Attribution 4.0 International (CC BY 4.0)**
+
+学员、讲师、独立研究者可以自由使用、修改、再分发本仓库内容，
+**但请保留出处**（仓库链接或原作者名字）。
+
+第三方组件按各自原 License 处理。复用本仓库 `.claude/skills/` 下的
+Skill 时，请同时参阅 `.claude/skills/CREDITS.md` 和 `06-Skill封装/.claude/skills/CREDITS.md`
+里列出的上游来源。
+
+================================================================
+代码部分 · MIT License
+================================================================
+
+Copyright (c) 2026 Vibe Coding 课程仓库贡献者
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================
+教学内容 · Creative Commons Attribution 4.0 International (CC BY 4.0)
+================================================================
+
+You are free to:
+
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material for any purpose,
+  even commercially.
+
+Under the following terms:
+
+- Attribution — You must give appropriate credit, provide a link to the
+  license, and indicate if changes were made. You may do so in any
+  reasonable manner, but not in any way that suggests the licensor
+  endorses you or your use.
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+================================================================
+数据归属
+================================================================
+
+ERA5 气候数据来自 Copernicus Climate Change Service Climate Data Store。
+使用时请按 Copernicus License v1.2 引用：
+
+  Hersbach, H., Bell, B., Berrisford, P., et al. (2023): ERA5 monthly
+  averaged data on single levels from 1940 to present. Copernicus Climate
+  Change Service (C3S) Climate Data Store (CDS).
+  DOI: 10.24381/cds.f17050d7
+
+Open-Meteo Historical Weather API 是 ERA5 的免费代理服务，归属其官方网站：
+  https://open-meteo.com/en/docs/historical-weather-api

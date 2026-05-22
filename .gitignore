@@ -1,0 +1,57 @@
+# Python runtime artifacts
+__pycache__/
+*.py[cod]
+
+# Notebook/runtime output
+.ipynb_checkpoints/
+
+# Local environment files
+.env
+.venv/
+venv/
+
+# Course-generated outputs (capstone is gitignored; example/ is committed as reference)
+capstone-科研数据分析/data/*
+capstone-科研数据分析/outputs/*
+!capstone-科研数据分析/data/.gitkeep
+!capstone-科研数据分析/outputs/.gitkeep
+
+# 第 08 章脚本默认写到这里（**锚定**根目录的 data / outputs，不影响其它层）
+/data/
+/outputs/
+
+# pipeline_template/ 的 placeholder 产物（学员真用前会 cp 到自己项目，不污染仓库）
+pipeline_template/data/
+pipeline_template/outputs/
+
+# Claude Code 本地覆盖配置（学员自己的私有权限不进仓库）
+.claude/settings.local.json
+
+# Codex 会话缓存
+.context/
+
+# example/ 是参考产物，**整体保留**，但 example 下永远不能放敏感东西
+!example/**
+
+# 不管 `!example/**` 放行了什么——下面这些**永远**不进仓库
+# 注意：宁可写精确一点，也别用宽 `**/*token*` 这种——会误伤 token估算.py / tokenizer.py 之类
+**/.env
+**/.env.*
+**/*.cdsapirc
+**/.cdsapirc
+**/settings.local.json
+**/*cookie*
+**/access_token*
+**/auth_token*
+**/bearer_token*
+**/refresh_token*
+**/*_token.txt
+**/*_token.json
+**/*secret*
+**/*.key
+**/*_api_key*
+**/api_keys.*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

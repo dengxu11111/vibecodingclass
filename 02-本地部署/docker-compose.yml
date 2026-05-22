@@ -1,0 +1,28 @@
+# Open WebUI：给本地 Ollama 套一个网页交互界面
+#
+# 启动：docker compose up -d
+# 停止：docker compose down
+# 升级：docker compose pull && docker compose up -d
+#
+# 浏览器打开 http://localhost:3000 ，注册第一个管理员账号即可使用。
+name: vibecoding-local-llm
+
+services:
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: open-webui
+    restart: unless-stopped
+    ports:
+      - "3000:8080"           # 浏览器访问 http://localhost:3000
+    environment:
+      # 让容器去访问宿主机的 11434 端口（Windows / Mac 用 host.docker.internal）
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+      # 关闭遥测
+      - ANONYMIZED_TELEMETRY=False
+    extra_hosts:
+      - "host.docker.internal:host-gateway"   # Linux 也能解析 host.docker.internal
+    volumes:
+      - open-webui-data:/app/backend/data     # 数据持久化（账号、对话、知识库）
+
+volumes:
+  open-webui-data:
