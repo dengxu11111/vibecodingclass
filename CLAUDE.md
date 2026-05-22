@@ -74,7 +74,7 @@ python 02_分析_cds.py
 
 ## 故意做成这样
 
-- `08-数据工作流` 用 arXiv，`capstone` 用 ERA5——故意两个领域，平缓入门 vs 真科研。
+- `08-数据工作流` 用 arXiv，`capstone` 用 ERA5——故意两个领域，平缓入门 vs 真科研
 - 没有 test / lint / build / pyproject.toml / CI。
 - 文档里**统一**写 `<repo-root>`，不要硬编码本机绝对路径。
 - `07-MCP扩展/mcp配置样例.json` 里 `_README` / `_说明` 字段不是合法 MCP 字段，是行内教学注释——你拷到自己 `~/.claude.json` 时要去掉。
