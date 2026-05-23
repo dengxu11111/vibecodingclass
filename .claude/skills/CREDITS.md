@@ -67,6 +67,6 @@ copy "06-Skill封装\.claude\skills\peer-review\SKILL.md" ".claude\skills\peer-r
 
 ## 课程自写 Skill
 
-`数据清洗/` 和 `出图/` 是老师自己写的，**不属于** K-Dense 上游。它们的归属与课程整体一致（见仓库根 LICENSE）。
+`数据清洗/` 和 `出图/` 是老师自己写的，**不属于** K-Dense 上游。复用请联系作者。
 
 根 `.claude/skills/` 下还有一个 `数字核验/`（capstone 第 5 步专用），同样是老师自写。
